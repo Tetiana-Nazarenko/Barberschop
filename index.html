@@ -15,38 +15,45 @@
 
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="container container-header">
 			<nav class="list-block">
-				<a href="index.html">
+				<a class="header-logo" href="index.html">
 					<img src="./image/Logo.svg" alt="" />
 				</a>
 				<ul class="list-items">
-					<li class="list-item item-first"> <a class="list-link" href="#">About</a></li>
-					<li class="list-item"> <a class="list-link" href="#">Services and prices</a></li>
-					<li class="list-item"> <a class="list-link" href="#">Barbers</a> </li>
+					<li class="list-item"> <a class="list-link " href="#">About</a></li>
+					<li class="list-item"> <a class="list-link active" href="#">Services and prices</a></li>
+					<li class="list-item"> <a class="list-link " href="#">Barbers</a> </li>
 					<li class="list-item"> <a class="list-link" href="#">Contacts</a> </li>
 				</ul>
-				<ul class="list-items">
-					<li class="list-item header-tel"> <a class="list-link" href="tel:+380441111111">+38 044 111 11
-							11</a> </li>
-					<li class="list-item header-btn"> <button class="btn" type="button">Online-Booking</button>
-					</li>
-				</ul>
 			</nav>
-		</div>
+
+			<a class=" header-tel list-link" href="tel:+380441111111">+38 044 111 11
+				11</a>
+			<button type="button" data-modal-open class="header-btn btn">Online-Booking</button>
+			<div data-modal class="bankdrop is-hidden">
+				<div class="modal-form">
+					<button data-modal-close class="modal-button" type="button">Закрыть
+					</button>
+				</div>
+			</div>
 		</div>
 	</header>
 	<main>
+
+		<!---Hero section-->
 		<section class="hero">
 			<div class="container hero-container">
-				<ul class="list-items hero-items">
-					<li class="list-social">
-						<a class="link-social" href="#" rel="nofollow noreferrer noopener">Instagram</a>
-					</li>
-					<li class="list-social">
-						<a class="link-social" href="#" rel="nofollow noreferrer noopener">Youtube</a>
-					</li>
-				</ul>
+				<div class="hero-list-wrap">
+					<ul class=" hero-items">
+						<li class="list-social">
+							<a class="link-social" href="#" rel="nofollow noreferrer noopener">Instagram</a>
+						</li>
+						<li class="list-social">
+							<a class="link-social" href="#" rel="nofollow noreferrer noopener">Youtube</a>
+						</li>
+					</ul>
+				</div>
 				<div class="hero-block">
 					<p class="subtitle">A hair salon for men in Kyiv</p>
 					<h1 class="hero-title">BarberShop</h1>
@@ -55,7 +62,7 @@
 				</div>
 			</div>
 		</section>
-		<!--About-->
+		<!--About section-->
 		<section class="section">
 			<div class="container">
 				<div class="about">
@@ -141,19 +148,19 @@
 			<div class="container trad-container">
 				<ul class="list-items traditional-items">
 					<li class="trad-item ">
-						<span class="trad-nummer">600</span>
+						<span>600</span>
 						<p class="hero-subtitle">Satisfied customers per day</p>
 					</li>
 					<li class="trad-item">
-						<span class="trad-nummer">50</span>
+						<span>50</span>
 						<p class="hero-subtitle">Awards for excellent service </p>
 					</li>
 					<li class="trad-item">
-						<span class="trad-nummer">20</span>
+						<span>20</span>
 						<p class="hero-subtitle">Kyiv’s best barbers</p>
 					</li>
 					<li class="trad-item">
-						<span class="trad-nummer">100</span>
+						<span>100</span>
 						<p class="hero-subtitle">Gifts for regular customers</p>
 					</li>
 				</ul>
@@ -173,7 +180,14 @@
 				<h2 class="block-title barbers-title">Our barbers</h2>
 				<ul class="list-items">
 					<li class="list-item">
-						<img src="./image/barber-1.jpg" alt="Barber-work" width="370" height="346">
+						<div class="overlay-block">
+							<img class="image" src="./image/barber-1.jpg" alt="Barber-work" width="370" height="346">
+
+							<p class="overlay-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
+								cum
+								harum sequi repellat pariatur odio perspiciatis quam eos odit iste facere! Tempora nisi
+								asperiores quia!</p>
+						</div>
 						<h3 class="team-name">John Smith</h3>
 						<p class="team-subtitle">Extreme Barber</p>
 
@@ -210,7 +224,13 @@
 
 					</li>
 					<li class="list-item">
-						<img src="./image/barber-2.jpg" alt="Barber-work" width="370" height="346">
+						<div class="overlay-block">
+							<img class="image" src="./image/barber-2.jpg" alt="Barber-work" width="370" height="346">
+							<p class="overlay-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
+								cum
+								harum sequi repellat pariatur odio perspiciatis quam eos odit iste facere! Tempora nisi
+								asperiores quia!</p>
+						</div>
 						<h3 class="team-name">Michele Doe</h3>
 						<p class="team-subtitle">Extreme Barber</p>
 						<ul class="social-list">
@@ -245,7 +265,13 @@
 						</ul>
 					</li>
 					<li class="list-item">
-						<img src="./image/barber-3.jpg" alt="Barber-work" width="370" height="346">
+						<div class="overlay-block">
+							<img class="image" src="./image/barber-3.jpg" alt="Barber-work" width="370" height="346">
+							<p class="overlay-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
+								cum
+								harum sequi repellat pariatur odio perspiciatis quam eos odit iste facere! Tempora nisi
+								asperiores quia!</p>
+						</div>
 						<h3 class="team-name">Alan Black</h3>
 						<p class="team-subtitle">Extreme Barber</p>
 						<ul class="social-list">
@@ -345,6 +371,7 @@
 			</ul>
 		</div>
 	</footer>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
